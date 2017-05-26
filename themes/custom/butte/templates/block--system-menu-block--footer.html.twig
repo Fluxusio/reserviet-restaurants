@@ -1,0 +1,11 @@
+ {% if content %}
+        <div{{ attributes }}>
+            {{ title_prefix }}
+            {% if label %}
+                <h3 class="font-black font20">{{ label }}</h3>
+                <div class="title-line color"></div>
+            {% endif %}
+            {{ title_suffix }}
+            {{ content }}
+        </div>
+    {% endif %}

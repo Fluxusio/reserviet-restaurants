@@ -1,0 +1,35 @@
+
+{% include theme_path ~ "/templates/header.html.twig" %}
+
+<section class="sp-page-title row">
+    <div class="container">
+        <h2>{{title}}</h2>
+        {% if page.breadcrumb%}
+            <ol class="breadcrumb">
+                {{ page.breadcrumb }}
+            </ol>
+        {% endif%}
+    </div>
+</section>
+
+<section class="sp-main-body">
+    <div class="container">
+        <div class="row">
+            {% if page.content %}
+                <div class="col-sm-12 blog-area">
+                    <div class="items-leading">
+                        {{ page.content }}
+                    </div>
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+</section>
+
+
+{% if page.section %}
+    {{ page.section }}
+{% endif %}
+
+{% include theme_path ~ "/templates/footer.html.twig" %}

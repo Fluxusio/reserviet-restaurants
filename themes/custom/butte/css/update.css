@@ -1,0 +1,485 @@
+.toolbar .toolbar-bar {
+    height: 39px;
+    top: 0px;
+    width: 100%;
+    z-index: 12500;
+}
+.pager ul, #block-butte-local-tasks > ul{
+    display: block;
+}
+.pager ul li, #block-butte-local-tasks > ul > li{
+    display: inline-block;
+}
+#block-butte-local-tasks > ul > li{
+    padding: 8px;
+}
+#block-butte-local-tasks{
+    width: 100%;
+    z-index: 999;
+}
+#block-butte-local-tasks > ul{
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+#block-butte-local-tasks > ul > li a{
+    font-size: 15px   ;
+    color: #2196f3;
+}
+input[type="text"], input[type="password"], input[type="email"], textarea, input[type="file"],select,input[type="search"] {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 0;
+    border: 1px solid #a09999;
+    background: #fff;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 3px;
+}
+
+textarea{
+    width: 100%;
+}
+#navbar-collapse-1 .contextual-region{
+    position: inherit;
+}
+.flickr-widget .flickr-5708711ee1be7 {
+    padding: 0;
+}
+.flickr-widget .flickr-5708711ee1be7 li{
+    float: left;
+}
+.sidebar-tag a{
+    border: solid 1px #cbcbcb;
+    border-radius: 4px;
+    color: #727272;
+    padding: 8px 15px;
+    margin: 0 5px 5px 0;
+    display: inline-block;
+}
+.sidebar-tag a:hover{
+    border: solid 1px #000;
+    background: #000;
+    border-radius: 4px;
+    color: #fff;
+    padding: 8px 15px;
+    margin: 0 5px 5px 0;
+    display: inline-block;
+}
+
+.filter-wrapper{
+    display: none;
+}
+form.comment-form{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+form.comment-form label{
+    display: block;
+    margin-bottom: 6px;
+    line-height: 19px;
+    font-weight: 400;
+    border-radius: 0;
+    font-size: 14px;
+    text-align: left;
+    white-space: normal;
+    color: inherit;
+
+}
+form.comment-form >div.form-item-name,form.comment-form >div.field--name-subject{
+    width: 100%;
+}
+@media screen and (min-width: 599px){
+    form.comment-form >div.form-item-name,form.comment-form >div.field--name-subject {
+        width: 50%;
+        float: left;
+        min-height: 1px;
+
+    }
+}
+
+
+form.comment-form input[type="text"],form.comment-form input[type="email"],form.comment-form textarea{
+    width: 100%;
+    border-color: #d0d0d0;
+    -ms-transition: border-color 0.3s;
+    -moz-transition: border-color 0.3s;
+    -webkit-transition: border-color 0.3s;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+
+    padding: 6px 10px;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+    background: #fff;
+    font: 15px/23px 'Raleway', sans-serif;
+    color: #404040;
+    appearance: normal;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+form.comment-form input[type="text"],form.comment-form input[type="email"]{
+    height: 50px;
+}
+form.comment-form .field--name-comment-body {
+    width: 100%;
+}
+form.comment-form .field--type-language {
+    margin: 0;
+}
+form.comment-form >div{
+    float: left;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+form.comment-form input[type="submit"]{
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 2px;
+    border: none;
+    opacity: 1;
+    float: left;
+    transition: all 0.3s ease-out 0s;
+    text-transform: uppercase;
+}
+form.comment-form input[type="submit"]:hover{
+    color: #fff;
+    background-color: #161616;
+}
+.comment-list img{
+    border-radius: 50%;
+    max-height: 80px;
+    max-width: 80px;
+}
+.indented{
+    margin-left: 68px;
+}
+.navbar-collapse .search-box .navbar-form .search-block-form.navbar-form{
+    position: inherit;
+}
+.services-2> .col-md-6:nth-of-type(2n+1){
+    clear: both
+}
+.white-title .section-titles h2{
+    color: #fff;
+    text-transform: none;
+}
+.m-botton-30 form{
+    margin-bottom: 30px;
+}
+.comment-links  .links {
+    float: right;
+}
+.comment-links  .links  li{
+    display: inline;
+    font-weight: 600;
+    margin-left: 12px;
+}
+.pagination{
+    clear: both;
+    width: 100%;
+    margin: 0;
+}
+.pager li>a, .pager li>span{
+    background-color: #e4e4e4;
+    border-radius: 100%;
+    color: #161616;
+}
+.pager li>a:hover, .pager li>span:hover,.pager li.is-active >a{
+    background-color: #666;
+    color: #fff;
+}
+.section-lg .container .row .col-sm-3.col-sm-6:nth-of-type(4n+1){
+    clear: both;
+}
+.section-lg .container .row .col-md-3.col-sm-6:nth-of-type(4n+1){
+    clear: both;
+}
+@media (max-width: 999px){
+    .section-lg .container .row .col-sm-3.col-sm-6:nth-of-type(2n+1){
+        clear: both;
+    }
+    .section-lg .container .row .col-md-3.col-sm-6:nth-of-type(2n+1){
+        clear: both;
+    }
+}
+.contact-message-reservation-form  form{
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 20px 35px 50px;
+    width: 60%;
+    overflow: hidden;
+}
+.reservation-block form{
+    width: 83.33333333%;
+    background-color: transparent;
+}
+.contact-message-feedback-form  form{
+    width: 83.333333333%;
+    margin: 0 auto;
+}
+.contact-message-feedback-form{
+    float: left;
+    width: 100%;
+}
+.reservation-block .section-titles h2{
+    color: #fff;
+}
+@media only screen and (max-width: 800px){
+    .contact-message-reservation-form  form,.contact-message-feedback-form  form{
+        width: 100%;
+    }
+
+}
+@media (max-width: 991px){
+    .contact-message-feedback-form  form .row .col-md-6 .form-item-name{
+        margin-bottom: 24px; 
+    }
+}
+input[type=submit]:hover{
+    color: #fff;
+    /*    background: #111; */
+
+}
+input[type=submit]{
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    margin-top: 12px;
+}
+.contact-message-reservation-form form >div{
+    width: 100%;
+    float: left;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+.contact-message-reservation-form input[type="submit"]{
+    margin: 0;
+}
+.contact-message-feedback-form  form >div{
+    /*width: 100%;*/
+    /*float: left;*/
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    margin-bottom: 24px; 
+    margin-top: 24px; 
+}
+
+
+
+.contact-message-reservation-form form label{
+    display: block;
+    margin-bottom: 6px;
+    line-height: 19px;
+    font-weight: 400;
+    border-radius: 0;
+    font-size: 14px;
+    text-align: left;
+    white-space: normal;
+    color: inherit;
+}
+@media screen and (min-width: 599px){
+    .contact-message-reservation-form form >div {
+        width: 50%;
+        float: left;
+        min-height: 1px;
+
+    }
+}
+
+.contact-message-reservation-form form >div.form-item-mail,.contact-message-reservation-form form >div.field--widget-string-textarea{
+    width: 100%;
+}
+.contact-form form input[type="text"],.contact-form form input[type="email"],
+.contact-form form input[type="date"],.contact-form form input[type="tel"],
+.contact-form form textarea,.contact-form form select {
+
+    width: 100%;
+    height: 50px;
+    border-color: #d0d0d0;
+    -ms-transition: border-color 0.3s;
+    -moz-transition: border-color 0.3s;
+    -webkit-transition: border-color 0.3s;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 6px 10px;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+    background: #fff;
+    font: 15px/23px 'Raleway', sans-serif;
+    color: #404040;
+    appearance: normal;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.contact-form form textarea{
+    height: auto;
+}
+.contact-message-reservation-form form  input[type="submit"]{
+    /*background-color: #dd3c9d;*/
+    opacity: 0.8;
+    -ms-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    height: 46px;
+    overflow: hidden;
+    margin: 0px 0 0 0;
+    padding: 2px 35px;
+    outline: none;
+    border: 0;
+    font: 600 20px/39px 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+.contact-message-reservation-form form  input[type="submit"]:hover{
+    color: #fff;
+    background-color: #161616;
+}
+/*shopping cart*/
+#block-butte-content .uc-cart-view-form table{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+#block-butte-content .uc-cart-view-form table thead{
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+#block-butte-content .uc-cart-view-form table > thead:first-child > tr:first-child > th{
+    border-top: 0;
+}
+#block-butte-content .uc-cart-view-form table thead > tr > th {
+    border-bottom-color: #ffffff;
+    padding: 10px;
+    color: #404040;
+}
+#block-butte-content .uc-cart-view-form table tbody > tr > td {
+    vertical-align: middle;
+    padding: 8px;
+    line-height: 1.42857143;
+    border-bottom:  1px solid #ddd;
+}
+#block-butte-content .uc-cart-view-form table img{
+    width: 70px;
+    min-width: 70px;
+    border: 1px solid #eee;
+    padding: 5px;
+
+}
+#block-butte-content .uc-cart-view-form table .uc-price{
+    color: #d90000;
+    font-weight: 700;
+}
+
+#block-butte-content .uc-cart-view-form input[type=submit]{
+    /*background: #FBD232;*/
+    font-weight: 700;
+    border-radius: 0;
+    color: #fff;
+}
+#block-butte-content .uc-cart-view-form input[type=submit]:hover{
+    color: #fff;
+    background: #111; 
+}
+
+.clear-both{
+    clear: both;
+}
+.bg-texture1 .section-titles h2{
+    color: #fff;
+}
+.title-font-30 .section-titles h2{
+    font-size: 30px !important;
+}
+.letter-spacing-5 {
+    letter-spacing: 0.5vw;
+}
+.footer-bg .section-titles h2{
+    color: #fff;
+}
+.spectial-offers .col-md-6.col-sm-6:nth-of-type(2n+1){
+    clear: both;
+}
+.images-product{
+    margin-bottom: 18px;
+}
+.body-product{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.md-slide-item {
+    display: none;
+}
+.wrapp-mini-cart .cart-block-summary-links{
+    margin-top: 20px;
+}
+.wrapp-mini-cart .cart-block-summary-links li{
+    border: none;
+}
+.wrapp-mini-cart .cart-block-summary-links  a{
+    border: 1px solid;
+    padding: 8px 15px;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    float: right;
+    margin-left: 12px;
+}
+.wrapp-mini-cart .cart-block-summary-links li.view-cart a,.wrapp-mini-cart .cart-block-summary-links li.checkout a:hover{
+    background: #000;
+}
+.user-login-form .description,.user-register-form .description, .user-pass p{
+    font-size: 13px;
+    font-style: italic;
+}
+.user-login-form >div,.user-register-form >div>div, .user-pass >div{
+    margin-bottom: 12px;
+}
+.user-register-form label{
+    width: 130px;
+}
+.user-register-form .form-item-pass .form-item-pass-pass1{
+    margin-bottom: 12px;
+}
+.search-page-form input[type="submit"]{
+    margin-top: 0;
+}
+.section-lg .container ol{
+    margin-top: 28px;
+}
+.section-lg .container ol li{
+    margin-bottom: 20px;
+    list-style-type: decimal;
+}
+.navbar-brand.logo {
+     background: url(../images/logo.png) no-repeat left 8px; 
+}
+input[type="submit"]:first-of-type{
+    margin-right: 12px;
+}
