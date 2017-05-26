@@ -285,7 +285,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '9QHyvbmUU8ZLWxUr-fq6M-f8cusTCSGp5dvw6OIf047wj-CXER28IvzvdK-ILxaSVBevIY1IXA';
+$settings['hash_salt'] = 'xYIteGstBMskboaF4X-wWuqCumdlxAlJEWWHpBZG0HtwIDG8w1R78JZXq75JRBgCtRsF7OwrYg';
 
 /**
  * Deployment identifier.
@@ -325,9 +325,6 @@ $settings['update_free_access'] = FALSE;
  *
  * You can also define an array of host names that can be accessed directly,
  * bypassing the proxy, in $settings['http_client_config']['proxy']['no'].
- *
- * If these settings are not configured, the system environment variables
- * HTTP_PROXY, HTTPS_PROXY, and NO_PROXY on the web server will be used instead.
  */
 # $settings['http_client_config']['proxy']['http'] = 'http://proxy_user:proxy_pass@example.com:8080';
 # $settings['http_client_config']['proxy']['https'] = 'http://proxy_user:proxy_pass@example.com:8080';
@@ -714,18 +711,18 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  *
  * Keep this code block at the end of this file to take full effect.
  */
-# if (file_exists(__DIR__ . '/settings.local.php')) {
-#   include __DIR__ . '/settings.local.php';
-# }
+ if (file_exists(__DIR__ . '/settings.local.php')) {
+   include __DIR__ . '/settings.local.php';
+ }
 $databases['default']['default'] = array (
-  'database' => 'drupal',
-  'username' => 'drupal',
-  'password' => 'kKT4q1Zy8F',
+  'database' => 'DATABASE_NAME',
+  'username' => 'USERNAME',
+  'password' => 'PASSWORD',
   'prefix' => '',
   'host' => 'localhost',
-  'port' => '',
+  'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = 'sites/default/files/config_frS0j-hp_5elnlM4GT16bf_1M3P9SYHoTb7-BY-2nHsR59RA3CSKK1TQ66lU_HSAWgJk0C6uzA/sync';
+$config_directories['sync'] = 'sites/default/files/config_cg3p4khTdDaJkhsp-Vdq3nhdtTSKh2gQWdHi81JnD4BPloQ4z4DelPfdkgdaTR75vAetamZzRQ/sync';
