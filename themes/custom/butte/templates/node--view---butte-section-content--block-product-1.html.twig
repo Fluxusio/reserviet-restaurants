@@ -1,0 +1,10 @@
+<div class="col-md-4 col-sm-6 m-bottom4">
+    <div class="services-we-do">
+        <div class="post-img"><a href="{{url}}">{{img_uri_700_500|t}}</a><span class="dine-time">{{content.price}}</span></div>
+        <div class="service-info">
+            <h3 class="font-black font-bold font20 uppercase m-bottom2">{{node.getTitle}}</h3>
+            <p>{{ node.body.summary|length > 100 ? node.body.summary|slice(0,100) ~ '...' : node.body.summary }}</p>
+
+            <div class="button full-wid left m-top2">{{content.add_to_cart}}</div></div>
+    </div>
+</div>

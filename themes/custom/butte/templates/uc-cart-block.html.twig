@@ -1,0 +1,49 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a shopping cart block.
+ *
+ * Available variables:
+ * - items: An associative array of cart item information containing:
+ *   - qty: Quantity in cart.
+ *   - title: Item title.
+ *   - price: Item price.
+ *   - desc: (optional) Item description.
+ * - item_count: The number of items in the shopping cart.
+ * - total: The formatted subtotal of all the products in the shopping cart.
+ * - summary_links: A set of links used in the cart summary.
+ * - attributes: HTML attributes for the main content element.
+ *
+ * @see template_preprocess_uc_cart_block()
+ *
+ * @ingroup themeable
+#}
+{% if items %}
+    <h3 class="font-color font20">{{title}}</h3>
+    <div>
+    {% for item in items %}
+    <div class="cart-item">
+        {%if item.image %}
+        <div class="cart-img"><img class="img-responsive" alt="{{item.alt}}" src="{{item.image}}"></div>
+        {% endif%}
+        <div class="cart-content">
+            <h4 class="item-name m-bottom1">{{ item.title }}</h4>
+            <p class="font16 font-color">{{ item.price }}</p>
+        </div>
+    </div>
+     {% endfor%}
+    </div>
+{% else %}
+    <p {{ attributes }}>
+        {{ 'There are no products in your shopping cart.'|t }}
+    </p>
+{% endif %}
+     <div class="cart-action">
+         <div class="fleft top-checkout-price  font-color font-bold">
+             <b>{{'CART SUBTOTAL : '|t}}</b>{{ total }}</div> 
+         {% if items %}
+          {{ summary_links }}
+        {% endif %}
+     </div>
+
+

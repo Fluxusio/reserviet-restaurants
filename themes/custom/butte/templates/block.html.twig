@@ -1,0 +1,90 @@
+
+{% if region == 'sidebar'%}
+    {% if content %}
+        <div{{ attributes }}>
+            {{ title_prefix }}
+            {% if label %}
+                <div {{ title_attributes.addClass('cat-title font-white font-bold uppercase m-bottom2')}}>{{ label }}</div>
+            {% endif %}
+            {{ title_suffix }}
+
+            {{ content }}
+
+        </div>
+    {% endif %}
+{% elseif region == 'section' %}
+    {% if content %}
+        <section{{ attributes }}>
+            {{ title_prefix }}
+            {% if label %}
+                <div class="section-titles text-center uppercase m-bottom4"><h2 class="font40 font-bold">{{ label }}</h2></div>
+                {% endif %}
+                {{ title_suffix }}
+
+            {{ content }}
+
+        </section>
+    {% endif %}
+{% elseif region == 'footer_column_1' or region == 'footer_column_2' or region == 'footer_column_3' or region == 'footer_column_4' %}
+    {% if content %}
+        <div{{ attributes }}>
+            {{ title_prefix }}
+            {% if label %}
+                <h3 class="font-black font20">{{ label }}</h3>
+                <div class="title-line color"></div>
+            {% endif %}
+            {{ title_suffix }}
+            {{ content }}
+        </div>
+    {% endif %}
+{% elseif region == 'slider' %}
+    {% if content %}
+        <header{{ attributes }}>
+            {{ title_prefix }}
+            {{ label }}
+            {{ title_suffix }}
+            {{ content }}
+
+        </header>
+    {% endif %}
+{% elseif region == 'search' %}
+    <div{{ attributes }}>
+        {{ title_prefix }}
+        {% if label %}
+            <h2 class="title">{{ label }}</h2>
+        {% endif %}
+        {{ title_suffix }}
+        {% if content %}
+            {{ content }}
+        {% endif %}
+
+    </div>
+{% elseif region == 'content' %}
+    <div{{ attributes.addClass('clear-both') }}>
+        {{ title_prefix }}
+        {% if label %}
+            <div class="section-titles text-center uppercase m-bottom4">
+               <h2 class="font-color font40 font-bold">{{ label }}</h2>
+            </div>
+        {% endif %}
+        {{ title_suffix }}
+        {% if content %}
+            {{ content }}
+        {% endif %}
+
+    </div>
+
+{% else %}
+    {% if content %}
+        <div{{ attributes  }}>
+            {{ title_prefix }}
+            {% if label %}
+                <h3{{ title_attributes }}>{{ label }}</h3>
+            {% endif %}
+            {{ title_suffix }}
+
+            {{ content }}
+
+        </div>
+    {% endif %}
+{% endif %}

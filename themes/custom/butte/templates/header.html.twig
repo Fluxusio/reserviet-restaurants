@@ -1,0 +1,56 @@
+{#% if page_layout == 'style_pizza' and page.slider %}
+    {{page.slider}}
+{% endif %#}
+<header class="header headr-style-2"> 
+    <!-- Menu -->
+ {% if page_layout == 'style_restaurant' or  page_layout == 'style_winery'%}
+  <div class="container">
+      <div class="row"> 
+ {% endif %}
+    <div class="navbar yamm navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                {{page.header}}
+            </div>
+            {% if page.cart%}
+                <div class="cart pull-right" style="float:right;" >
+                     <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="icon-basket"></span></button>
+                     <div class="dropdown-menu">
+                                <div class="wrapp-mini-cart">
+                                    <div class="mini-cart">
+                                      {{ page.cart}}
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            {% endif %}
+            <div id="navbar-collapse-1" class="navbar-collapse collapse pull-right dark-color nopadding">
+                {% if page.onepage_menu %}
+                    {{page.onepage_menu}}
+                {% elseif page.main_menu %}
+                       {{page.main_menu}}
+                {% endif %}
+                {% if page.search%}
+                    <div class="search-box no-display-phone">
+                        <div class="navbar-form">
+                            <div>
+                        {{page.search}}
+                         <div class="input-group">
+                            <span class="input-group-btn">
+                                  <button type="reset" class="btn btn-default"><span class="fa fa-close"> <span class="sr-only">Close</span></span></button>
+                                  <button type="submit" class="btn btn-default"><span class="fa fa-search"> <span class="sr-only">Search here...!</span></span></button>
+                            </span></div>
+                         </div>
+                    </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+  {% if page_layout == 'style_restaurant' or  page_layout == 'style_winery'%}
+        </div>
+    </div> 
+   {% endif %}
+</header>
+<!-- end Header --> 

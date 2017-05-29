@@ -1,0 +1,17 @@
+.md-layer-2-4-0 {
+z-index: 998 !important; text-align: center;
+ font-size: 1.6666666666667em;
+ font-weight: 400;
+ font-family: "Arial";
+}
+.md-layer-2-4-1 {
+z-index: 999 !important; text-align: center;
+ font-size: 2.0833333333333em;
+ font-weight: 400;
+ font-family: "Arial";
+}
+.md-layer-2-4-2 {
+z-index: 2 !important; text-align: center;
+ font-size: 1.6666666666667em;
+ font-family: "Arial";
+}

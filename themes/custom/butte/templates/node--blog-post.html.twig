@@ -1,0 +1,87 @@
+
+   {% set oneimage = node.field_image.0.entity.uri.value %}
+   {% set alt = node.field_image.0.alt %}
+     {% set full_name = node.getRevisionAuthor().field_full_name.value %}
+         
+{% if not page %}
+  
+    <div class="col-md-12">
+        {% set length = node.field_image|length %}
+        {% if length > 1%}
+            <div data-ride="carousel" class="carousel slide" id="carousel-example-generic1"> 
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    {% for i in 0..length-1%}
+                        {% if loop.first %}
+                            <li class="active" data-slide-to="{{i}}" data-target="#carousel-example-generic1"></li>
+                        {%else%}
+                        <li data-slide-to="{{i}}" data-target="#carousel-example-generic1" class=""></li>
+                        {% endif %}
+                    {% endfor %}
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div role="listbox" class="carousel-inner">
+                    {% for img in img_uri_1170_350 %}
+                        {% if loop.first %}
+                            <div class="item active">{{img|t}}</div>
+                        {%else%}
+                         <div class="item">{{img|t}}</div>
+                     </div>
+                        {% endif %}
+                    {% endfor %}
+                   
+                  
+            </div> 
+            {%else %}
+        
+            {{content.field_image}} 
+        {% endif%}
+        <h3 class="m-bottom2 m-top4 font-thin font30"><a href="{{url}}">{{node.getTitle}}</a></h3>
+        <p>{{ node.body.summary|length > 292 ? node.body.summary|slice(0,292) ~ '...' : node.body.summary }}</p>
+        <div class="post-info m-top2 m-bottom5"><i class="fa fa-user"></i> {% if full_name %}{{ full_name }}{% else %}{{ author_name }}{% endif %} on {{ node.created.value|date('d F Y, g:iA') }} <span class="pull-right"><i class="fa fa-comments"></i> {{ node.field_blog_comments.comment_count }} &nbsp;/&nbsp; {{ content.field_blog_tags}}</span> </div>
+    </div>
+    
+{% else %}{# single #}
+    
+    <div class="col-md-12">
+        {% set length = node.field_image|length %}
+        {% if length > 1%}
+            <div data-ride="carousel" class="carousel slide" id="carousel-example-generic1"> 
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    {% for i in 0..length-1%}
+                        {% if loop.first %}
+                            <li class="active" data-slide-to="{{i}}" data-target="#carousel-example-generic1"></li>
+                        {%else%}
+                        <li data-slide-to="{{i}}" data-target="#carousel-example-generic1" class=""></li>
+                        {% endif %}
+                    {% endfor %}
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div role="listbox" class="carousel-inner">
+                    {% for img in img_uri_1170_350 %}
+                        {% if loop.first %}
+                            <div class="item active">{{img|t}}</div>
+                        {%else%}
+                         <div class="item">{{img|t}}</div>
+                     </div>
+                        {% endif %}
+                    {% endfor %}
+                   
+            </div> 
+            {%else %}
+        
+            {{content.field_image}} 
+        {% endif%}
+        <h3 class="m-bottom2 m-top4 font-thin font30">{{title}}</h3>
+        {{content.body}}
+        <div class="post-info m-top2 m-bottom5"><i class="fa fa-user"></i> {% if full_name %}{{ full_name }}{% else %}{{ author_name }}{% endif %} on {{ node.created.value|date('d F Y, g:iA') }} <span class="pull-right"><i class="fa fa-comments"></i> {{ node.field_blog_comments.comment_count }} &nbsp;/&nbsp; {{ content.field_blog_tags}}</span> </div>
+    </div>
+    <div class="col-md-12">
+        <h4 class="m-bottom3 font-thin font20">{{'Comments'|t}}({{ node.field_blog_comments.comment_count }})</h4>
+      {{ content.field_blog_comments }}
+    </div>
+   
+{% endif %}
