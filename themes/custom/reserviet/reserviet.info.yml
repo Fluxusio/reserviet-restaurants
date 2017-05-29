@@ -1,0 +1,34 @@
+name: Reserviet
+type: theme
+description: 'Reserviet - Vietnam's only live reservation platform
+core: 8.x
+base theme: butte
+screenshot: screenshot.png
+libraries:
+  - butte/butte-lib
+stylesheets-remove:
+  - core/themes/stable/css/views/views.module.css
+  - core/themes/stable/css/system/components/align.module.css
+  - core/assets/vendor/normalize-css/normalize.css
+  - core/modules/system/css/system.module.css
+  - core/modules/system/css/system.theme.css
+  - core/modules/views/css/views.module.css
+
+regions:
+  search: 'Search'
+  cart: 'Shopping cart'
+  header: 'Header'
+  breadcrumb: 'Breadcrumb'
+  main_menu: 'Main menu'
+  onepage_menu: 'Onepage menu'
+  slider: 'Slider'
+  content: 'Main content'
+  sidebar: 'Sidebar'
+  section: 'Section content'
+  footer: 'Footer'
+  footer_column_1: 'Footer column 1'
+  footer_column_2: 'Footer column 2'
+  footer_column_3: 'Footer column 3'
+  footer_column_4: 'Footer column 4'
+  
+
